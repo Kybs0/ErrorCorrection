@@ -1,0 +1,32 @@
+﻿<Window x:Class="English.ErrorCorrection.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:English.ErrorCorrection"
+        xmlns:system="clr-namespace:System;assembly=System"
+        mc:Ignorable="d"
+        Title="英语纠错" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <GroupBox Header="输入文本" FontSize="16" Margin="4">
+                <TextBox x:Name="InputTextBox" TextWrapping="Wrap" BorderThickness="0" Margin="6" FontSize="14"
+                         Language="en-US"
+                         SpellCheck.IsEnabled="True" Text="The errors are not underlined or highlightsed in the text. how lonng have been you here?"></TextBox>
+            </GroupBox>
+            <Button Grid.Column="1" x:Name="CorrectButton" Content="点击纠错" Click="CorrectButton_Click"
+                    Width="100" VerticalAlignment="Center" Height="28" Margin="10" Background="Transparent"/>
+        </Grid>
+        <GroupBox Header="纠错信息" Grid.Row="1" FontSize="16" Margin="4">
+            <TextBox x:Name="ErrorCorrectionTextBox" TextWrapping="Wrap" BorderThickness="0" Margin="6" FontSize="14"/>
+        </GroupBox>
+    </Grid>
+</Window>
