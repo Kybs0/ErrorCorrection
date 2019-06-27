@@ -17,7 +17,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using English.Business;
-using IronPython.Hosting;
 using Microsoft.Scripting.Hosting;
 
 namespace English.ErrorCorrection
