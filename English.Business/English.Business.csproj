@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnglishCheckApiService.cs" />
-    <Compile Include="EnglishSentenceCheckMatchInfo.cs" />
     <Compile Include="WebRequestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
