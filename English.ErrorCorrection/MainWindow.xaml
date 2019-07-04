@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:English.ErrorCorrection"
         xmlns:system="clr-namespace:System;assembly=System"
         mc:Ignorable="d"
-        Title="英语纠错" Height="450" Width="800">
+        Title="英语纠错(LanguageTool)" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
